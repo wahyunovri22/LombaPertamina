@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sc.semicolon.lombapertamina.Activity.Agen.TokoActivity">
+
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_agen"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher_round"/>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_nama_agen"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agen Budi Gas LPG"
+                android:textColor="@color/putih"/>
+            <TextView
+                android:id="@+id/txt_alamat_agen"
+                android:textColor="@color/putih"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kp. JambetSari Ds Krajankulon Kec Kaliwungu Kab Kendal"/>
+            <TextView
+                android:id="@+id/txt_telp_agen"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/putih"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="08984566845"/>
+
+            <TextView
+                android:id="@+id/txt_slogan"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/putih"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sloganku"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.ogaclejapan.smarttablayout.SmartTabLayout
+        android:id="@+id/viewpagertab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:clipToPadding="false"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        app:stl_defaultTabTextColor="#fff"
+        app:stl_distributeEvenly="true"
+        app:stl_dividerColor="@android:color/transparent"
+        app:stl_dividerThickness="8dp"
+        app:stl_indicatorColor="@color/colorAccent"
+        app:stl_indicatorCornerRadius="18dp"
+        app:stl_indicatorGravity="center"
+        app:stl_indicatorInterpolation="smart"
+        app:stl_indicatorThickness="36dp"
+        app:stl_underlineColor="@android:color/transparent"
+        app:stl_underlineThickness="6dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/viewpagertab"
+        />
+</LinearLayout>

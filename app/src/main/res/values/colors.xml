@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ed1927</color>
+    <color name="colorPrimaryDark">#3F51B5</color>
+    <color name="colorAccent">#3F51B5</color>
+    <color name="bg">#ededed</color>
+    <color name="putih">#fff</color>
+    <color name="hijau">#3ef921</color>
+</resources>

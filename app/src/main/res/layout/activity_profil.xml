@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    tools:context="com.sc.semicolon.lombapertamina.Activity.ProfilActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_user"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/ic_launcher_round"/>
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txt_nama_user"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wahyu Novriyanto"
+                    android:textColor="@color/putih"/>
+                <TextView
+                    android:id="@+id/txt_alamat_user"
+                    android:textColor="@color/putih"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kp. JambetSari Ds Krajankulon Kec Kaliwungu Kab Kendal"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/txt_telp_user"
+                    android:textColor="@color/putih"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="08966867464"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/pesanan"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                app:cardBackgroundColor="@color/putih"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cek Pesanan"/>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/boking"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                app:cardBackgroundColor="@color/putih"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cek Boking"/>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/history"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                app:cardBackgroundColor="@color/putih"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="History"/>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:text="logout"/>
+</LinearLayout>
